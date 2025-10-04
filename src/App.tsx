@@ -1,26 +1,14 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Insights from './components/Insights';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/home";
+import ThankYou from "./pages/ThankYou";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Insights />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/thank-you" element={<ThankYou />} />
+      <Route path="*" element={<p className="text-center">Page not found</p>} />
+    </Routes>
   );
 }
 
