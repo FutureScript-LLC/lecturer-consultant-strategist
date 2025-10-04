@@ -4,7 +4,8 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE_PATH || '/lecturer-consultant-strategist',
+  // Use VITE_BASE_PATH when provided; default to root ('/') which is typical on Vercel
+  base: process.env.VITE_BASE_PATH ?? '/',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
