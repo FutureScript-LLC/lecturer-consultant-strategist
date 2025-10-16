@@ -198,21 +198,21 @@ const Testimonials: React.FC<TestimonialsProps> = ({ darkMode = true }) => {
         >
           <div>
             <div className="text-5xl font-light mb-2">
-              <span className="font-semibold">98</span>%
+              <span className="font-semibold">100</span>%
             </div>
             <p className="opacity-80">Client Satisfaction Rate</p>
           </div>
 
           <div>
             <div className="text-5xl font-light mb-2">
-              <span className="font-semibold">50</span>+
+              <span className="font-semibold">20</span>+
             </div>
             <p className="opacity-80">Organizations Served</p>
           </div>
 
           <div>
             <div className="text-5xl font-light mb-2">
-              <span className="font-semibold">500</span>+
+              <span className="font-semibold">200</span>+
             </div>
             <p className="opacity-80">Professionals Mentored</p>
           </div>

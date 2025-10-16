@@ -18,9 +18,6 @@ export default function Contact() {
     message: "",
   });
 
-  // const [isSubmitting, setIsSubmitting] = useState(false);
-  // const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -39,7 +36,7 @@ export default function Contact() {
           <div className="space-y-8">
             <div>
               <div className="inline-block mb-4">
-                <div className="h-1 w-16 bg-gold-500 mb-6"></div>
+                <div className="h-1 w-16 bg-yellow-500 mb-6"></div>
               </div>
 
               <h2 className="text-5xl lg:text-6xl font-light text-black mb-6">
@@ -56,7 +53,7 @@ export default function Contact() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gold-500 flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-yellow-500 flex items-center justify-center">
                   <Mail className="w-6 h-6 text-black" />
                 </div>
                 <div>
@@ -71,29 +68,29 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gold-500 flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-yellow-500 flex items-center justify-center">
                   <Phone className="w-6 h-6 text-black" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-black mb-1">Phone</h3>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:0552379260"
                     className="text-gray-600 hover:text-black transition-colors"
                   >
-                    +1 (234) 567-890
+                    055 237 9260
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gold-500 flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-yellow-500 flex items-center justify-center">
                   <MessageSquare className="w-6 h-6 text-black" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-black mb-1">
                     Response Time
                   </h3>
-                  <p className="text-gray-600">Typically within 24-48 hours</p>
+                  <p className="text-gray-600">Typically within 24 hours</p>
                 </div>
               </div>
             </div>
@@ -126,19 +123,19 @@ export default function Contact() {
               <h3 className="font-semibold text-black mb-3">What to Expect</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <span>
                     Personalized response addressing your specific needs
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <span>
                     Initial consultation to understand your objectives
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <span>
                     Tailored proposal with clear deliverables and timeline
                   </span>
@@ -149,19 +146,23 @@ export default function Contact() {
 
           <div className="bg-black p-8 lg:p-10">
             <form
-              action="https://formsubmit.co/tomtunnel3@gmail.com"
+              action="https://formsubmit.co/Prince.aning@edipconsulting.com"
               method="POST"
               className="space-y-6"
             >
-              {/* Hidden settings for Formsubmit */}
+              {/* Hidden settings for FormSubmit */}
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
               <input
                 type="hidden"
-                name="_autoresponse"
-                value="Thank you for your message!"
+                name="_subject"
+                value="New Contact Form Submission"
               />
-              <input type="hidden" name="_next" value="/thank-you" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thank you for reaching out! I've received your message and will respond within 24 hours."
+              />
 
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">
@@ -187,7 +188,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                     placeholder="Your full name"
                   />
                 </div>
@@ -206,7 +207,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -224,7 +225,7 @@ export default function Contact() {
                     name="organization"
                     value={formData.organization}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                     placeholder="Your company or institution"
                   />
                 </div>
@@ -242,7 +243,7 @@ export default function Contact() {
                     required
                     value={formData.request_type}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   >
                     <option value="general" className="bg-black">
                       General Inquiry
@@ -273,7 +274,7 @@ export default function Contact() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent resize-none"
                     placeholder="Tell me about your needs, goals, or questions..."
                   />
                 </div>
@@ -281,7 +282,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-gold-500 text-black font-medium hover:bg-gold-400 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full px-8 py-4 bg-yellow-500 text-black font-medium hover:bg-yellow-400 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 Send Message
                 <Send className="w-5 h-5" />

@@ -1,48 +1,52 @@
-import { TrendingUp, Brain, Rocket, Calendar } from 'lucide-react';
+import { TrendingUp, Brain, Rocket, Calendar } from "lucide-react";
 
 export default function Insights() {
   const insights = [
     {
-      category: 'Strategic Thinking',
-      title: 'The Future of Strategic Planning in a VUCA World',
-      excerpt: 'How organizations can build resilient strategies that adapt to volatility, uncertainty, complexity, and ambiguity.',
-      date: 'March 2024',
+      category: "Strategic Thinking",
+      title: "The Future of Strategic Planning in a VUCA World",
+      excerpt:
+        "How organizations can build resilient strategies that adapt to volatility, uncertainty, complexity, and ambiguity.",
+      date: "March 2024",
       icon: Brain,
     },
     {
-      category: 'Leadership',
-      title: 'Building High-Performance Teams Through Servant Leadership',
-      excerpt: 'Exploring the principles of servant leadership and their impact on team performance and organizational culture.',
-      date: 'February 2024',
+      category: "Leadership",
+      title: "Building High-Performance Teams Through Servant Leadership",
+      excerpt:
+        "Exploring the principles of servant leadership and their impact on team performance and organizational culture.",
+      date: "February 2024",
       icon: Users2,
     },
     {
-      category: 'Innovation',
-      title: 'From Disruption to Integration: Navigating Digital Transformation',
-      excerpt: 'A framework for successfully integrating digital innovation without losing organizational identity and values.',
-      date: 'January 2024',
+      category: "Innovation",
+      title:
+        "From Disruption to Integration: Navigating Digital Transformation",
+      excerpt:
+        "A framework for successfully integrating digital innovation without losing organizational identity and values.",
+      date: "January 2024",
       icon: Rocket,
     },
   ];
 
   const upcomingEvents = [
     {
-      type: 'Keynote',
-      title: 'Strategic Leadership Summit 2024',
-      date: 'June 15, 2024',
-      location: 'Virtual',
+      type: "!st Panel Discussion",
+      title: "HR Focus Africa Conference & Awards 2025",
+      date: "October 17, 2025",
+      location: "Accra International Conference Center",
     },
     {
-      type: 'Workshop',
-      title: 'Advanced Strategy Masterclass',
-      date: 'July 8-9, 2024',
-      location: 'Lagos, Nigeria',
+      type: "Workshop",
+      title: "Advanced Strategy Masterclass",
+      date: "July 8-9, 2024",
+      location: "Lagos, Nigeria",
     },
     {
-      type: 'Lecture Series',
-      title: 'Innovation in African Markets',
-      date: 'August 2024',
-      location: 'Multiple Universities',
+      type: "Lecture Series",
+      title: "Innovation in African Markets",
+      date: "August 2024",
+      location: "Multiple Universities",
     },
   ];
 
@@ -57,12 +61,14 @@ export default function Insights() {
               </div>
 
               <h2 className="text-5xl lg:text-6xl font-light text-black mb-6">
-                Latest <span className="font-semibold">Insights & Publications</span>
+                Latest{" "}
+                <span className="font-semibold">Insights & Publications</span>
               </h2>
 
               <p className="text-xl text-gray-700 leading-relaxed font-light">
-                Exploring the intersection of strategy, leadership, and innovation through
-                research, case studies, and practical frameworks.
+                Exploring the intersection of strategy, leadership, and
+                innovation through research, case studies, and practical
+                frameworks.
               </p>
             </div>
 
@@ -138,7 +144,11 @@ export default function Insights() {
               </div>
 
               <button
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
                 className="mt-8 w-full px-6 py-3 bg-gold-500 text-black font-medium hover:bg-gold-400 transition-all duration-300"
               >
                 Book for Your Event
@@ -150,7 +160,8 @@ export default function Insights() {
                 Subscribe to Newsletter
               </h3>
               <p className="text-gray-600 mb-6 font-light">
-                Get monthly insights, strategy frameworks, and industry analysis delivered to your inbox.
+                Get monthly insights, strategy frameworks, and industry analysis
+                delivered to your inbox.
               </p>
 
               <div className="space-y-3">

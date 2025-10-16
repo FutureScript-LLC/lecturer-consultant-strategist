@@ -1,4 +1,5 @@
-import { BookOpen, Linkedin, Instagram, Mail } from "lucide-react";
+import { Linkedin, Instagram, Mail } from "lucide-react";
+import Logo from "../assets/images/DPAA logo white.png";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -28,10 +29,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gold-500 flex items-center justify-center">
-                <BookOpen className="w-6 h-6 text-black" />
+              <div className="w-80 h-20 items-start justify-start">
+                <img
+                  src={Logo}
+                  className="w-[220px] md:w-[250px]"
+                  alt="Footer logo"
+                />
               </div>
-              <span className="text-xl font-light">Strategic Leadership</span>
             </div>
 
             <p className="text-white/70 leading-relaxed font-light">
