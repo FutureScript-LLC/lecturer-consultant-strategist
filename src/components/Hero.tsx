@@ -1,5 +1,5 @@
 import { ArrowRight, ChevronDown } from "lucide-react";
-import girl from "../assets/images/girl.jpg";
+import prince from "../assets/images/Prince.jpeg";
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -44,7 +44,7 @@ export default function Hero() {
             </div>
 
             <p className="text-xl lg:text-2xl text-white/70 leading-relaxed font-light">
-              Lecturer • Strategic Consultant • Thought Leader
+              Lecturer • Consultant • Entrepreneur
             </p>
 
             <p className="text-base lg:text-lg text-white/60 leading-relaxed">
@@ -75,7 +75,7 @@ export default function Hero() {
             <div className="relative aspect-[3/4] lg:aspect-[4/5] w-full mx-auto lg:mx-0">
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-transparent rounded-lg"></div>
               <img
-                src={girl}
+                src={prince}
                 alt="Professional consultant"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />

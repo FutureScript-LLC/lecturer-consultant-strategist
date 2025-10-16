@@ -1,26 +1,35 @@
-import { Lightbulb, Target, Handshake as HandshakeIcon, GraduationCap } from 'lucide-react';
+import {
+  Lightbulb,
+  Target,
+  Handshake as HandshakeIcon,
+  GraduationCap,
+} from "lucide-react";
 
 export default function About() {
   const pillars = [
     {
       icon: GraduationCap,
-      title: 'Knowledge-Sharing',
-      description: 'Dedicated to educating and empowering the next generation of professionals through comprehensive lectures, workshops, and mentorship programs.',
+      title: "Strategic Advisory",
+      description:
+        "Helping organizations navigate complexity with clear, data-driven insights that align vision with actionable execution.",
     },
     {
       icon: Target,
-      title: 'Strategic Thinking',
-      description: 'Helping organizations navigate complexity with clear, data-driven strategies that align vision with actionable execution.',
+      title: "Research and Publication",
+      description:
+        "Sharing cutting-edge insights and innovative approaches that challenge conventional thinking, contribute to academic literature, and drive industry advancement",
     },
     {
       icon: Lightbulb,
-      title: 'Thought Leadership',
-      description: 'Sharing cutting-edge insights and innovative approaches that challenge conventional thinking and drive industry advancement.',
+      title: "Knowledge sharing",
+      description:
+        "Dedicated to educating and empowering the next generation of organizational leaders, professionals, and young people through comprehensive lectures, publications, public speaking, and mentorship/coaching programs.",
     },
     {
       icon: HandshakeIcon,
-      title: 'Collaborative Growth',
-      description: 'Building meaningful partnerships that foster mutual growth, combining diverse perspectives to create lasting impact.',
+      title: "Collaborative Transformation",
+      description:
+        "Building meaningful partnerships with public and private sector leaders, international organizations, and local community leaders to transform Ghana and aid the African Renaissance. ",
     },
   ];
 
@@ -34,31 +43,36 @@ export default function About() {
             </div>
 
             <h2 className="text-5xl lg:text-6xl font-light text-black leading-tight">
-              Bridging Theory and Practice for <span className="font-semibold">Real-World Impact</span>
+              Bridging Theory and Practice for{" "}
+              <span className="font-semibold">Real-World Impact</span>
             </h2>
 
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed font-light">
               <p>
-                With over 15 years of experience spanning academia and industry, I specialize in
-                translating complex concepts into practical strategies that drive tangible results.
+                With experience spanning academia and industry, I specialize in
+                translating theoretical concepts and industry insights into
+                practical strategies that drive tangible results.
               </p>
 
               <p>
-                My work centers on empowering individuals and organizations to think strategically,
-                act decisively, and adapt continuously in an ever-evolving landscape.
+                My work centers on empowering organizations (large companies and
+                SMEs), leaders and individuals to think strategically, act
+                decisively, and adapt continuously in an ever-evolving
+                landscape.
               </p>
 
               <p>
-                Whether in the lecture hall, boardroom, or collaborative workshop, my approach
-                combines rigorous analysis with human-centered thinking to deliver solutions
-                that are both innovative and implementable.
+                Whether in the lecture hall, boardroom, or collaborative
+                workshop, my approach combines rigorous analysis with
+                human-centered thinking to deliver solutions that are both
+                innovative and implementable.
               </p>
             </div>
 
             <div className="pt-4">
               <div className="flex flex-wrap gap-3">
                 <span className="px-5 py-2 bg-black text-white text-sm font-light tracking-wide">
-                  Strategic Planning
+                  Business Strategy
                 </span>
                 <span className="px-5 py-2 bg-black text-white text-sm font-light tracking-wide">
                   Leadership Development
@@ -67,10 +81,10 @@ export default function About() {
                   Change Management
                 </span>
                 <span className="px-5 py-2 bg-black text-white text-sm font-light tracking-wide">
-                  Innovation Strategy
+                  SME and Industrial policy
                 </span>
                 <span className="px-5 py-2 bg-black text-white text-sm font-light tracking-wide">
-                  Organizational Design
+                  Innovation, Entrepreneurship and Start-ups
                 </span>
               </div>
             </div>

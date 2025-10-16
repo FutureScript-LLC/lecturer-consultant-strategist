@@ -1,4 +1,4 @@
-import { BookOpen, Linkedin, Twitter, Mail } from "lucide-react";
+import { BookOpen, Linkedin, Instagram, Mail } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -41,7 +41,7 @@ export default function Footer() {
 
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/dr-prince-akowuah-aning-68a9694a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-all duration-300"
@@ -49,15 +49,15 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://www.instagram.com/drpaning?igsh=MWJ4NDN1cDM0bjZ1eQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-all duration-300"
               >
-                <Twitter className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:Prince.aning@edipconsulting.com"
                 className="w-10 h-10 bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-all duration-300"
               >
                 <Mail className="w-5 h-5" />

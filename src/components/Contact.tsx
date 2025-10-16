@@ -3,7 +3,7 @@ import {
   Mail,
   Phone,
   Linkedin,
-  Twitter,
+  Instagram,
   MessageSquare,
   Send,
   CheckCircle,
@@ -62,10 +62,10 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-black mb-1">Email</h3>
                   <a
-                    href="mailto:contact@example.com"
+                    href="mailto:Prince.aning@edipconsulting.com"
                     className="text-gray-600 hover:text-black transition-colors"
                   >
-                    contact@example.com
+                    Prince.aning@edipconsulting.com
                   </a>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function Contact() {
               </h3>
               <div className="flex gap-4">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/dr-prince-akowuah-aning-68a9694a/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-white border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300"
@@ -112,12 +112,12 @@ export default function Contact() {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://www.instagram.com/drpaning?igsh=MWJ4NDN1cDM0bjZ1eQ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-white border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300"
                 >
-                  <Twitter className="w-5 h-5" />
+                  <Instagram className="w-5 h-5" />
                 </a>
               </div>
             </div>
