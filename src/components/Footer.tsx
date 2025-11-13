@@ -1,5 +1,7 @@
-import { Linkedin, Instagram, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import Logo from "../assets/images/DPAA logo white.png";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,7 +18,7 @@ export default function Footer() {
       { label: "Contact", id: "contact" },
     ],
     services: [
-      { label: "Strategic Consulting" },
+      { label: "Strategic Advisory" },
       { label: "Speaking & Training" },
       { label: "Academic Lectures" },
       { label: "Advisory Services" },
@@ -39,8 +41,8 @@ export default function Footer() {
             </div>
 
             <p className="text-white/70 leading-relaxed font-light">
-              Empowering students, professionals, and organizations through
-              strategic thinking, knowledge-sharing, and thought leadership.
+              Developing the leaders and institutions that will transform Ghana
+              and Africa
             </p>
 
             <div className="flex gap-4">
@@ -58,7 +60,23 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-all duration-300"
               >
-                <Instagram className="w-5 h-5" />
+                <FaInstagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1EybUfmoSY/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-all duration-300"
+              >
+                <FaFacebookF className="w-5 h-5" />
+              </a>
+              <a
+                href="https://x.com/prince_aning?s=11"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-all duration-300"
+              >
+                <FaXTwitter className="w-5 h-5" />
               </a>
               <a
                 href="mailto:Prince.aning@edipconsulting.com"
@@ -117,12 +135,12 @@ export default function Footer() {
         <div className="pt-8 border-t border-gold-500/30">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/70 text-sm font-light">
-              {currentYear} Strategic Leadership. All rights reserved.
+              {currentYear} Dr Prince Akowuah Aning.
             </p>
 
-            <p className="text-white/70 text-sm flex items-center gap-2 font-light">
+            {/* <p className="text-white/70 text-sm flex items-center gap-2 font-light">
               Designed by FutureScript Solutions
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

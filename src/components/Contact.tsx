@@ -3,11 +3,12 @@ import {
   Mail,
   Phone,
   Linkedin,
-  Instagram,
   MessageSquare,
   Send,
   CheckCircle,
 } from "lucide-react";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -90,7 +91,7 @@ export default function Contact() {
                   <h3 className="font-semibold text-black mb-1">
                     Response Time
                   </h3>
-                  <p className="text-gray-600">Typically within 24 hours</p>
+                  <p className="text-gray-600">Typically within 48 hours</p>
                 </div>
               </div>
             </div>
@@ -114,7 +115,23 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-white border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300"
                 >
-                  <Instagram className="w-5 h-5" />
+                  <FaInstagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.facebook.com/share/1EybUfmoSY/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300"
+                >
+                  <FaFacebookF className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://x.com/prince_aning?s=11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300"
+                >
+                  <FaXTwitter className="w-5 h-5" />
                 </a>
               </div>
             </div>

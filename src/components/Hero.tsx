@@ -44,12 +44,16 @@ export default function Hero() {
             </div>
 
             <p className="text-xl lg:text-2xl text-white/70 leading-relaxed font-light">
-              Lecturer • Consultant • Entrepreneur
+              Scholar • Strategic Advisor • Industrialist • The Anomaly
             </p>
 
             <p className="text-base lg:text-lg text-white/60 leading-relaxed">
               Empowering organizations and professionals through strategic
               insight, knowledge-sharing, and transformative leadership.
+            </p>
+            <p className="text-base lg:text-lg text-white/60 leading-relaxed">
+              Slogan: Developing Leaders and Institutions That Transform Ghana
+              and Africa.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">

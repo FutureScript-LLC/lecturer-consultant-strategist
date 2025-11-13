@@ -9,7 +9,7 @@ export default function Services() {
   const services = [
     {
       icon: Building2,
-      title: "Strategic Consulting",
+      title: "Strategic Advisory",
       description:
         "Tailored strategic solutions for organizations navigating growth, transformation, or market challenges.",
       features: [
