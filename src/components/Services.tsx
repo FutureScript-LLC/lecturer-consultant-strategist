@@ -3,6 +3,7 @@ import {
   Building2,
   Users as Users2,
   BookOpenCheck,
+  Briefcase,
 } from "lucide-react";
 
 export default function Services() {
@@ -60,6 +61,19 @@ export default function Services() {
       ],
       ideal: "Policy makers, Boards, Institutional Bodies",
     },
+    {
+      icon: Briefcase,
+      title: "BUSINESS COACHING",
+      description:
+        "I work closely with entrepreneurs, executives, and teams to identify opportunities, overcome challenges, and unlock their full potential.",
+      features: [
+        "Strategic clarity",
+        "Leadership development",
+        "Performance optimization",
+        "Accountability and growth",
+        "Problem-solving and perspective",
+      ],
+    },
   ];
 
   return (
@@ -109,16 +123,18 @@ export default function Services() {
                 ))}
               </div>
 
-              <div className="pt-6 border-t border-gray-200">
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider whitespace-nowrap">
-                    Ideal for:
-                  </span>
-                  <span className="text-sm text-black font-medium">
-                    {service.ideal}
-                  </span>
+              {service.ideal && (
+                <div className="pt-6 border-t border-gray-200">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider whitespace-nowrap">
+                      Ideal for:
+                    </span>
+                    <span className="text-sm text-black font-medium">
+                      {service.ideal}
+                    </span>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>
