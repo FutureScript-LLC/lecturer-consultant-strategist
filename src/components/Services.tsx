@@ -63,7 +63,7 @@ export default function Services() {
     },
     {
       icon: Briefcase,
-      title: "BUSINESS COACHING",
+      title: "Business Coaching",
       description:
         "I work closely with entrepreneurs, executives, and teams to identify opportunities, overcome challenges, and unlock their full potential.",
       features: [
@@ -73,6 +73,7 @@ export default function Services() {
         "Accountability and growth",
         "Problem-solving and perspective",
       ],
+      ideal: "Corporate bodies, SMEs, Start-Ups, NGOs",
     },
   ];
 

@@ -52,8 +52,8 @@ export default function Hero() {
               insight, knowledge-sharing, and transformative leadership.
             </p>
             <p className="text-base lg:text-lg text-white/60 leading-relaxed">
-              Slogan: Developing Leaders and Institutions That Transform Ghana
-              and Africa.
+              My personal commitment is to develop leaders and institutions that
+              transform Ghana and Africa.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">

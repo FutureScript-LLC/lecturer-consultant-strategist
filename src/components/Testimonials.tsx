@@ -212,7 +212,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ darkMode = true }) => {
 
           <div>
             <div className="text-5xl font-light mb-2">
-              <span className="font-semibold">200</span>+
+              <span className="font-semibold">148</span>+
             </div>
             <p className="opacity-80">Professionals Mentored</p>
           </div>

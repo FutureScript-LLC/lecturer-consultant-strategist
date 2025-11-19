@@ -31,22 +31,22 @@ export default function Insights() {
 
   const upcomingEvents = [
     {
-      type: "!st Panel Discussion",
-      title: "HR Focus Africa Conference & Awards 2025",
-      date: "October 17, 2025",
-      location: "Accra International Conference Center",
+      type: "Workshop",
+      title: "Strategy Masterclass for SMEs",
+      date: "June - July 2026 (TBC)",
+      location: "In-person/Hybrid",
     },
     {
       type: "Workshop",
-      title: "Advanced Strategy Masterclass",
-      date: "July 8-9, 2024",
-      location: "Lagos, Nigeria",
+      title: "Scaling your startup",
+      date: "Aug - Sept 2026",
+      location: "TBC",
     },
     {
-      type: "Lecture Series",
-      title: "Innovation in African Markets",
-      date: "August 2024",
-      location: "Multiple Universities",
+      type: "1st Panel Discussion",
+      title: "HR Focus Africa Conference & Awards 2025",
+      date: "October 17, 2025",
+      location: "Accra International Conference Center",
     },
   ];
 
