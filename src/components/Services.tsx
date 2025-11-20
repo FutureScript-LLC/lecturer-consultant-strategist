@@ -96,48 +96,53 @@ export default function Services() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="group bg-white border border-gray-200 p-10 hover:border-gold-500 transition-all duration-300"
-            >
-              <div className="mb-6">
-                <div className="w-16 h-16 bg-gold-500 flex items-center justify-center group-hover:bg-black transition-colors duration-300">
-                  <service.icon className="w-8 h-8 text-black group-hover:text-white" />
-                </div>
-              </div>
-
-              <h3 className="text-2xl font-semibold text-black mb-3">
-                {service.title}
-              </h3>
-
-              <p className="text-gray-600 mb-6 leading-relaxed font-light">
-                {service.description}
-              </p>
-
-              <div className="space-y-3 mb-6">
-                {service.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-1.5 h-1.5 bg-gold-500 rounded-full mt-2"></div>
-                    <span className="text-sm text-gray-700">{feature}</span>
-                  </div>
-                ))}
-              </div>
-
-              {service.ideal && (
-                <div className="pt-6 border-t border-gray-200">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider whitespace-nowrap">
-                      Ideal for:
-                    </span>
-                    <span className="text-sm text-black font-medium">
-                      {service.ideal}
-                    </span>
+          {services.map((service, index) => {
+            const isLast = index === services.length - 1;
+            return (
+              <div
+                key={index}
+                className={`group bg-white border border-gray-200 p-10 hover:border-gold-500 transition-all duration-300
+          ${isLast ? "md:col-span-2 md:w-1/2 md:mx-auto" : ""}
+        `}
+              >
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gold-500 flex items-center justify-center group-hover:bg-black transition-colors duration-300">
+                    <service.icon className="w-8 h-8 text-black group-hover:text-white" />
                   </div>
                 </div>
-              )}
-            </div>
-          ))}
+
+                <h3 className="text-2xl font-semibold text-black mb-3">
+                  {service.title}
+                </h3>
+
+                <p className="text-gray-600 mb-6 leading-relaxed font-light">
+                  {service.description}
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  {service.features.map((feature, idx) => (
+                    <div key={idx} className="flex items-start gap-3">
+                      <div className="flex-shrink-0 w-1.5 h-1.5 bg-gold-500 rounded-full mt-2"></div>
+                      <span className="text-sm text-gray-700">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {service.ideal && (
+                  <div className="pt-6 border-t border-gray-200">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider whitespace-nowrap">
+                        Ideal for:
+                      </span>
+                      <span className="text-sm text-black font-medium">
+                        {service.ideal}
+                      </span>
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
 
         <div className="mt-16 text-center">
